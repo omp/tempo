@@ -1,0 +1,25 @@
+body {
+	color: #ddd;
+	background-color: #222;
+	padding: 0em;
+	margin: 0em;
+}
+
+div#time {
+	margin-top: 6em;
+}
+
+div#time p {
+	font-size: 10em;
+	text-align: center;
+	padding: 0em;
+	margin: 0em;
+}
+
+div#date p {
+	color: #777;
+	font-size: 2em;
+	text-align: center;
+	padding: 0em;
+	margin: 0em;
+}

@@ -29,7 +29,8 @@ function updateTime() {
 function startTempo() {
 	updateTime();
 
-	setInterval(updateTime, 1000);
+	setTimeout(function() {updateTime(); setInterval(updateTime, 1000)},
+		1000 - new Date().getTime() % 1000);
 }
 
 window.onload = startTempo;

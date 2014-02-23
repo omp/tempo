@@ -4,5 +4,9 @@
   "name": "Tempo",
   "version": "0.1",
 
-  "description": "Replace the New Tab page with a time display."
+  "description": "Replace the New Tab page with a time display.",
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
 }

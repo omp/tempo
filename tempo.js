@@ -19,10 +19,11 @@ function updateTime() {
 	var dm = date.getMonth();
 	var dy = date.getFullYear();
 
-	var str_t = padTime(h) + ":" + padTime(m) + ":" + padTime(s);
 	var str_d = dd + " " + months[dm] + " " + dy;
 
-	document.getElementById("timeval").innerHTML = str_t;
+	document.getElementById("h").innerHTML = padTime(h);
+	document.getElementById("m").innerHTML = padTime(m);
+	document.getElementById("s").innerHTML = padTime(s);
 	document.getElementById("dateval").innerHTML = str_d;
 }
 

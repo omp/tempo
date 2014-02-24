@@ -1,4 +1,5 @@
 body {
+	font-family: "Open Sans";
 	color: #ddd;
 	background-color: #222;
 	padding: 0em;
@@ -6,11 +7,11 @@ body {
 }
 
 div#time {
-	margin-top: 6em;
+	margin-top: 4em;
 }
 
 div#time p {
-	font-size: 10em;
+	font-size: 8em;
 	text-align: center;
 	padding: 0em;
 	margin: 0em;
@@ -18,7 +19,7 @@ div#time p {
 
 div#date p {
 	color: #777;
-	font-size: 2em;
+	font-size: 1.6em;
 	text-align: center;
 	padding: 0em;
 	margin: 0em;

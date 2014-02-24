@@ -35,3 +35,5 @@ function startTempo() {
 }
 
 window.onload = startTempo;
+
+document.addEventListener('contextmenu', function(e) {e.preventDefault()});

@@ -6,6 +6,11 @@
 
   "description": "Replace the New Tab page with a time display.",
 
+  "icons": {
+    "48": "icon/clock48.png",
+    "128": "icon/clock128.png"
+  },
+
   "chrome_url_overrides": {
     "newtab": "index.html"
   }

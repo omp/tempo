@@ -1,3 +1,7 @@
+// Copyright 2014 David Vazgenovich Shakaryan <dvshakaryan@gmail.com>
+// Distributed under the terms of the GNU General Public License v2.
+// See http://www.gnu.org/licenses/gpl-2.0.txt for the full license text.
+
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 function padTime(x) {

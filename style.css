@@ -4,6 +4,9 @@ body {
 	font-family: 'Lato', sans-serif;
 	padding: 0em;
 	margin: 0em;
+
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 div#container {

@@ -13,6 +13,8 @@ function padTime(x) {
 }
 
 function updateTime() {
+	var timeformat = localStorage['timeformat'];
+
 	var date = new Date();
 
 	var h = date.getHours();
@@ -24,6 +26,10 @@ function updateTime() {
 	var dy = date.getFullYear();
 
 	var str_d = dd + " " + months[dm] + " " + dy;
+
+	if(timeformat == '12') {
+		h = (h + 11) % 12 + 1;
+	}
 
 	document.getElementById("h").innerHTML = padTime(h);
 	document.getElementById("m").innerHTML = padTime(m);

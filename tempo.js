@@ -2,11 +2,11 @@
 // Distributed under the terms of the GNU General Public License v2.
 // See http://www.gnu.org/licenses/gpl-2.0.txt for the full license text.
 
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 function padTime(x) {
 	if(x < 10) {
-		return "0" + x;
+		return '0' + x;
 	} else {
 		return x;
 	}
@@ -25,16 +25,16 @@ function updateTime() {
 	var dm = date.getMonth();
 	var dy = date.getFullYear();
 
-	var str_d = dd + " " + months[dm] + " " + dy;
+	var str_d = dd + ' ' + months[dm] + ' ' + dy;
 
 	if(timeformat == '12') {
 		h = (h + 11) % 12 + 1;
 	}
 
-	document.getElementById("h").innerHTML = padTime(h);
-	document.getElementById("m").innerHTML = padTime(m);
-	document.getElementById("s").innerHTML = padTime(s);
-	document.getElementById("dateval").innerHTML = str_d;
+	document.getElementById('h').innerHTML = padTime(h);
+	document.getElementById('m').innerHTML = padTime(m);
+	document.getElementById('s').innerHTML = padTime(s);
+	document.getElementById('dateval').innerHTML = str_d;
 }
 
 function startTempo() {

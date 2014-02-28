@@ -2,7 +2,10 @@
 // Distributed under the terms of the GNU General Public License v2.
 // See http://www.gnu.org/licenses/gpl-2.0.txt for the full license text.
 
-var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+	'August', 'September', 'October', 'November', 'December'];
+
+var timeformat = null;
 
 function padTime(x) {
 	if(x < 10) {
@@ -13,8 +16,6 @@ function padTime(x) {
 }
 
 function updateTime() {
-	var timeformat = localStorage['timeformat'];
-
 	var date = new Date();
 
 	var h = date.getHours();
@@ -38,6 +39,8 @@ function updateTime() {
 }
 
 function startTempo() {
+	timeformat = localStorage['timeformat'];
+
 	updateTime();
 
 	setTimeout(function() {updateTime(); setInterval(updateTime, 1000)},

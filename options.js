@@ -10,7 +10,7 @@ function save_options() {
 	var status = document.getElementById('status');
 	status.innerHTML = 'Options saved.';
 
-	setTimeout(function() {status.innerHTML = ''}, 1000);
+	setTimeout(function() {status.innerHTML = '&nbsp;'}, 1000);
 }
 
 function restore_options() {

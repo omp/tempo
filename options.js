@@ -11,9 +11,9 @@ function saveOptions() {
 	localStorage['timeformat'] = timeformat;
 
 	var status = document.getElementById('status');
-	status.innerHTML = 'Options saved.';
+	status.style['visibility'] = 'visible';
 
-	setTimeout(function() {status.innerHTML = '&nbsp;'}, 1000);
+	setTimeout(function() {status.style['visibility'] = 'hidden'}, 2000);
 }
 
 function restoreOptions() {

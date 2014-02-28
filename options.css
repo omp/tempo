@@ -43,12 +43,8 @@ div.section p.option {
 	margin-left: 1em;
 }
 
-div#button {
+div.button {
 	text-align: center;
-}
-
-p#status {
-	color: #390;
 }
 
 button {
@@ -67,5 +63,22 @@ button:hover {
 }
 
 button:focus {
-	outline: 0;
+	outline: 0em;
+}
+
+div#status {
+	width: 20em;
+	height: 1em;
+	padding: 1em;
+	margin: auto;
+	position: absolute;
+	top: 18.4em;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	visibility: hidden;
+	color: #fff;
+	background-color: #390;
+	border-radius: 1em;
 }

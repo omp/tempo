@@ -1,7 +1,7 @@
 body {
 	color: #222;
 	background-color: #222;
-	font-family: 'Verdana', sans-serif;
+	font-family: 'Lato', sans-serif;
 	padding: 0em;
 	margin: 0em;
 
@@ -26,7 +26,6 @@ div#container {
 
 h1 {
 	font-size: 1.6em;
-	font-family: 'Lato', sans-serif;
 	text-align: center;
 	padding: 0em;
 	margin: 0em;
@@ -43,7 +42,8 @@ p#button {
 button {
 	color: #ddd;
 	background-color: #222;
-	font-size: 1em;
+	font-family: inherit;
+	font-size: inherit;
 	font-weight: bold;
 	padding: 1em;
 	border: 0em;

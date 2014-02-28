@@ -17,7 +17,7 @@ function restore_options() {
 	var timeformat = localStorage['timeformat'];
 
 	if(!timeformat) {
-		return;
+		timeformat = '24';
 	}
 
 	var select = document.getElementById('timeformat');

@@ -11,7 +11,7 @@ body {
 
 div#container {
 	width: 20em;
-	height: 11em;
+	height: 11.2em;
 	padding: 1em;
 	margin: auto;
 	position: absolute;
@@ -31,12 +31,24 @@ h1 {
 	margin: 0em;
 }
 
-p#status {
-	color: #390;
+div.section {
+	margin: 1em;
 }
 
-p#button {
+div.section p {
+	margin: 0.2em 0em;
+}
+
+div.section p.option {
+	margin-left: 1em;
+}
+
+div#button {
 	text-align: center;
+}
+
+p#status {
+	color: #390;
 }
 
 button {

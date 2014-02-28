@@ -26,7 +26,7 @@ function updateTime() {
 	var dm = date.getMonth();
 	var dy = date.getFullYear();
 
-	if(timeformat == '12') {
+	if(timeformat == 12) {
 		h = (h + 11) % 12 + 1;
 	}
 

@@ -2,9 +2,12 @@
 // Distributed under the terms of the GNU General Public License v2.
 // See http://www.gnu.org/licenses/gpl-2.0.txt for the full license text.
 
-function save_options() {
-	var select = document.getElementById('timeformat');
-	var timeformat = select.children[select.selectedIndex].value;
+function saveOptions() {
+	var timeformat = 24;
+	if(document.getElementById('t12').checked) {
+		var timeformat = 12;
+	}
+
 	localStorage['timeformat'] = timeformat;
 
 	var status = document.getElementById('status');
@@ -13,30 +16,22 @@ function save_options() {
 	setTimeout(function() {status.innerHTML = '&nbsp;'}, 1000);
 }
 
-function restore_options() {
+function restoreOptions() {
 	var timeformat = localStorage['timeformat'];
 
 	if(!timeformat) {
-		timeformat = '24';
+		timeformat = 24;
 	}
 
-	var select = document.getElementById('timeformat');
+	var option = document.getElementById('t' + timeformat);
 
-	for(var i = 0; i < select.children.length; i++) {
-		var child = select.children[i];
-
-		if(child.value == timeformat) {
-			child.selected = 'true';
-
-			break;
-		}
-	}
+	option.checked = true;
 }
 
-function start_options() {
-	restore_options();
+function startOptions() {
+	restoreOptions();
 
-	document.querySelector('#save').addEventListener('click', save_options);
+	document.querySelector('#save').addEventListener('click', saveOptions);
 }
 
-window.onload = start_options;
+window.onload = startOptions;

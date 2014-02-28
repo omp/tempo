@@ -11,16 +11,15 @@
 	<body>
 		<div id="container">
 			<h1>Options</h1>
-			<p>Time format:
-				<select id="timeformat">
-					<option value="12">12-hour</option>
-					<option value="24">24-hour</option>
-				</select>
-			</p>
-			<p id="status">&nbsp;</p>
-			<p id="button">
+			<div class="section">
+				<p>Time format:</p>
+				<p class="option"><input type="radio" name="timeformat" id="t12" /><label for="t12"> 12-hour</label></p>
+				<p class="option"><input type="radio" name="timeformat" id="t24" /><label for="t24"> 24-hour</label></p>
+			</div>
+			<div id="button">
 				<button id="save">Save</button>
-			</p>
+			</div>
+			<p id="status">&nbsp;</p>
 		</div>
 	</body>
 </html>
